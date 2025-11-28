@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn Tập Toán Lớp 5 - Tam Giác & Diện Tích (30 Câu)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .question-block {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 5px solid #28a745;
+        }
+        .question-number {
+            font-weight: bold;
+            color: #dc3545;
+            margin-right: 10px;
+        }
+        .question-text {
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .answer-option {
+            margin-bottom: 8px;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            border: 1px solid #ccc;
+        }
+        .answer-option:hover {
+            background-color: #e2e6ea;
+        }
+        .rationale {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+            font-style: italic;
+            font-size: 0.95em;
+        }
+        .correct-answer {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        .incorrect-answer {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        .hint {
+            margin-top: 10px;
+            padding: 5px;
+            border-left: 3px solid #ffc107;
+            background-color: #fff3cd;
+            color: #856404;
+            display: block;
+            font-size: 0.9em;
+        }
+        .selected {
+            border: 2px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎉 Ôn Tập Cuối Tuần 12 - Toán Lớp 5 🥳</h1>
+    <p style="text-align: center; font-style: italic;">(Chủ đề: Tam Giác, Chu vi, Diện tích và Đường cao - 30 Câu Trắc Nghiệm Tương Tác)</p>
+
+    <div class="question-block" data-correct-index="0" data-hint="Hãy nhớ rằng đường cao có thể nằm bên ngoài tam giác nếu đó là tam giác tù.">
+        <div class="question-text"><span class="question-number">Câu 1:</span> Đường cao của một tam giác là đoạn thẳng kẻ từ một đỉnh và <b>vuông góc</b> với:</div>
+        <div class="answer-option">A. Đường thẳng chứa cạnh đối diện.</div>
+        <div class="answer-option">B. Cạnh đối diện tại trung điểm của nó.</div>
+        <div class="answer-option">C. Cạnh kề với đỉnh đó.</div>
+        <div class="answer-option">D. Đường trung bình của tam giác.</div>
+        <div class="rationale"><b>Giải thích:</b> Đường cao là đoạn thẳng từ đỉnh vuông góc với đường thẳng chứa cạnh đối diện. Điều này đảm bảo tính đúng đắn cho mọi loại tam giác.</div>
+        <div class="hint">Gợi ý: Hãy nhớ rằng đường cao có thể nằm bên ngoài tam giác nếu đó là tam giác tù.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="0" data-hint="Chu vi luôn là tổng các độ dài ở 'vòng ngoài' của hình.">
+        <div class="question-text"><span class="question-number">Câu 2:</span> Công thức tính <b>chu vi</b> $P$ của tam giác có ba cạnh $a$, $b$, và $c$ là:</div>
+        <div class="answer-option">A. $P = a + b + c$</div>
+        <div class="answer-option">B. $P = \frac{1}{2} \times a \times h$</div>
+        <div class="answer-option">C. $P = 2 \times (a + b)$</div>
+        <div class="answer-option">D. $P = a \times b \times c$</div>
+        <div class="rationale"><b>Giải thích:</b> Chu vi của một hình đa giác được tính bằng tổng độ dài các cạnh bao quanh hình đó.</div>
+        <div class="hint">Gợi ý: Chu vi luôn là tổng các độ dài ở 'vòng ngoài' của hình.</div>
+    </div>
+    
+    <div class="question-block" data-correct-index="2" data-hint="Diện tích tam giác chỉ bằng một nửa diện tích của hình chữ nhật hay hình bình hành có cùng đáy và chiều cao.">
+        <div class="question-text"><span class="question-number">Câu 3:</span> Công thức tính <b>diện tích</b> $S$ của một tam giác với cạnh đáy $a$ và chiều cao tương ứng $h$ là:</div>
+        <div class="answer-option">A. $S = a \times h$</div>
+        <div class="answer-option">B. $S = a + h$</div>
+        <div class="answer-option">C. $S = \frac{1}{2} \times a \times h$</div>
+        <div class="answer-option">D. $S = 2 \times a \times h$</div>
+        <div class="rationale"><b>Giải thích:</b> Diện tích tam giác bằng một nửa tích của cạnh đáy và chiều cao tương ứng.</div>
+        <div class="hint">Gợi ý: Diện tích tam giác chỉ bằng một nửa diện tích của hình chữ nhật hay hình bình hành có cùng đáy và chiều cao.</div>
+    </div>
+    
+    <div class="question-block" data-correct-index="1" data-hint="Hãy cộng chính xác ba số thập phân này lại với nhau.">
+        <div class="question-text"><span class="question-number">Câu 4:</span> Tính <b>chu vi</b> của tam giác có ba cạnh lần lượt là $4,2 \text{ cm}$, $5 \text{ cm}$ và $6,8 \text{ cm}$.</div>
+        <div class="answer-option">A. $15,5 \text{ cm}$</div>
+        <div class="answer-option">B. $16 \text{ cm}$</div>
+        <div class="answer-option">C. $15 \text{ cm}$</div>
+        <div class="answer-option">D. $17 \text{ cm}$</div>
+        <div class="rationale"><b>Giải thích:</b> Chu vi $P = 4,2 + 5 + 6,8 = 16 \text{ cm}$.</div>
+        <div class="hint">Gợi ý: Hãy cộng chính xác ba số thập phân này lại với nhau.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="1" data-hint="Nhớ công thức: $S = \frac{1}{2} \times \text{đáy} \times \text{cao}$.">
+        <div class="question-text"><span class="question-number">Câu 5:</span> Tính <b>diện tích</b> của tam giác có cạnh đáy $15 \text{ cm}$ và chiều cao tương ứng $10 \text{ cm}$.</div>
+        <div class="answer-option">A. $150 \text{ cm}^2$</div>
+        <div class="answer-option">B. $75 \text{ cm}^2$</div>
+        <div class="answer-option">C. $25 \text{ cm}^2$</div>
+        <div class="answer-option">D. $300 \text{ cm}^2$</div>
+        <div class="rationale"><b>Giải thích:</b> Diện tích $S = \frac{1}{2} \times 15 \times 10 = 75 \text{ cm}^2$.</div>
+        <div class="hint">Gợi ý: Nhớ công thức: $S = \frac{1}{2} \times \text{đáy} \times \text{cao}$.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="1" data-hint="Hai đơn vị diện tích liền kề hơn kém nhau $100$ lần.">
+        <div class="question-text"><span class="question-number">Câu 6:</span> Đổi đơn vị: $2,5 \text{ m}^2$ bằng bao nhiêu đề-xi-mét vuông ($\text{dm}^2$)?</div>
+        <div class="answer-option">A. $25 \text{ dm}^2$</div>
+        <div class="answer-option">B. $250 \text{ dm}^2$</div>
+        <div class="answer-option">C. $2500 \text{ dm}^2$</div>
+        <div class="answer-option">D. $25000 \text{ dm}^2$</div>
+        <div class="rationale"><b>Giải thích:</b> Vì $1 \text{ m}^2 = 100 \text{ dm}^2$, nên $2,5 \text{ m}^2 = 2,5 \times 100 = 250 \text{ dm}^2$.</div>
+        <div class="hint">Gợi ý: Hai đơn vị diện tích liền kề hơn kém nhau $100$ lần.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="1" data-hint="Đáy $= (2 \times \text{Diện tích}) \div \text{Chiều cao}$.">
+        <div class="question-text"><span class="question-number">Câu 7:</span> Một tam giác có <b>diện tích</b> là $48 \text{ dm}^2$ và chiều cao là $6 \text{ dm}$. Độ dài cạnh đáy tương ứng là:</div>
+        <div class="answer-option">A. $8 \text{ dm}$</div>
+        <div class="answer-option">B. $16 \text{ dm}$</div>
+        <div class="answer-option">C. $12 \text{ dm}$</div>
+        <div class="answer-option">D. $24 \text{ dm}$</div>
+        <div class="rationale"><b>Giải thích:</b> Đáy $= \frac{2 \times S}{h} = \frac{2 \times 48}{6} = \frac{96}{6} = 16 \text{ dm}$.</div>
+        <div class="hint">Gợi ý: Đáy $= (2 \times \text{Diện tích}) \div \text{Chiều cao}$.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="1" data-hint="Chiều cao $ = (2 \times \text{Diện tích}) \div \text{Đáy}$.">
+        <div class="question-text"><span class="question-number">Câu 8:</span> Một tam giác có diện tích là $27 \text{ m}^2$ và cạnh đáy là $9 \text{ m}$. <b>Chiều cao</b> tương ứng là:</div>
+        <div class="answer-option">A. $3 \text{ m}$</div>
+        <div class="answer-option">B. $6 \text{ m}$</div>
+        <div class="answer-option">C. $9 \text{ m}$</div>
+        <div class="answer-option">D. $12 \text{ m}$</div>
+        <div class="rationale"><b>Giải thích:</b> Chiều cao $h = \frac{2 \times S}{\text{đáy}} = \frac{2 \times 27}{9} = \frac{54}{9} = 6 \text{ m}$.</div>
+        <div class="hint">Gợi ý: Chiều cao $ = (2 \times \text{Diện tích}) \div \text{Đáy}$.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="1" data-hint="Trong tam giác vuông, hai cạnh góc vuông đóng vai trò là đáy và chiều cao tương ứng của nhau.">
+        <div class="question-text"><span class="question-number">Câu 9:</span> Tính diện tích của tam giác vuông có hai cạnh góc vuông là $5 \text{ cm}$ và $8 \text{ cm}$.</div>
+        <div class="answer-option">A. $40 \text{ cm}^2$</div>
+        <div class="answer-option">B. $20 \text{ cm}^2$</div>
+        <div class="answer-option">C. $13 \text{ cm}^2$</div>
+        <div class="answer-option">D. $32 \text{ cm}^2$</div>
+        <div class="rationale"><b>Giải thích:</b> Diện tích $S = \frac{1}{2} \times 5 \times 8 = 20 \text{ cm}^2$.</div>
+        <div class="hint">Gợi ý: Trong tam giác vuông, hai cạnh góc vuông đóng vai trò là đáy và chiều cao tương ứng của nhau.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="0" data-hint="Cộng các số thập phân cần chú ý đặt thẳng hàng dấu phẩy.">
+        <div class="question-text"><span class="question-number">Câu 10:</span> Một tam giác có ba cạnh là $7,5 \text{ cm}$, $8,2 \text{ cm}$ và $9,3 \text{ cm}$. Chu vi của tam giác là:</div>
+        <div class="answer-option">A. $25 \text{ cm}$</div>
+        <div class="answer-option">B. $24,5 \text{ cm}$</div>
+        <div class="answer-option">C. $26 \text{ cm}$</div>
+        <div class="answer-option">D. $25,5 \text{ cm}$</div>
+        <div class="rationale"><b>Giải thích:</b> Chu vi $P = 7,5 + 8,2 + 9,3 = 25 \text{ cm}$.</div>
+        <div class="hint">Gợi ý: Cộng các số thập phân cần chú ý đặt thẳng hàng dấu phẩy.</div>
+    </div>
+    
+    <div class="question-block" data-correct-index="1" data-hint="Hãy nhớ quy tắc: Diện tích tỉ lệ thuận với đáy khi chiều cao không đổi.">
+        <div class="question-text"><span class="question-number">Câu 11:</span> Tam giác $A$ có diện tích gấp $2$ lần tam giác $B$. Hai tam giác này có <b>cùng chiều cao</b>. Hỏi cạnh đáy của tam giác $A$ so với cạnh đáy của tam giác $B$ như thế nào?</div>
+        <div class="answer-option">A. Bằng nhau</div>
+        <div class="answer-option">B. Gấp $2$ lần</div>
+        <div class="answer-option">C. Gấp $4$ lần</div>
+        <div class="answer-option">D. Bằng một nửa</div>
+        <div class="rationale"><b>Giải thích:</b> Khi chiều cao bằng nhau, tỉ số diện tích bằng tỉ số cạnh đáy. Diện tích gấp $2$ lần thì cạnh đáy cũng phải gấp $2$ lần.</div>
+        <div class="hint">Gợi ý: Hãy nhớ quy tắc: Diện tích tỉ lệ thuận với đáy khi chiều cao không đổi.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="1" data-hint="Tương tự như câu trên, diện tích tỉ lệ thuận với chiều cao khi đáy không đổi.">
+        <div class="question-text"><span class="question-number">Câu 12:</span> Hai tam giác có <b>cùng cạnh đáy</b>. Nếu chiều cao của tam giác $A$ bằng $\frac{1}{3}$ chiều cao của tam giác $B$, thì diện tích của tam giác $A$ so với tam giác $B$ là:</div>
+        <div class="answer-option">A. Gấp $3$ lần</div>
+        <div class="answer-option">B. Bằng $\frac{1}{3}$</div>
+        <div class="answer-option">C. Bằng $\frac{1}{9}$</div>
+        <div class="answer-option">D. Bằng nhau</div>
+        <div class="rationale"><b>Giải thích:</b> Khi cạnh đáy bằng nhau, tỉ số diện tích bằng tỉ số chiều cao tương ứng. Chiều cao bằng $\frac{1}{3}$ thì diện tích cũng bằng $\frac{1}{3}$.</div>
+        <div class="hint">Gợi ý: Tương tự như câu trên, diện tích tỉ lệ thuận với chiều cao khi đáy không đổi.</div>
+    </div>
+    
+    <div class="question-block" data-correct-index="0" data-hint="Cẩn thận với việc chuyển đổi từ mét vuông sang héc-ta. ($1 \text{ ha} = 10000 \text{ m}^2$)">
+        <div class="question-text"><span class="question-number">Câu 13:</span> (Bài toán có lời văn) Một miếng đất hình tam giác có đáy $60 \text{ m}$ và chiều cao $30 \text{ m}$. Tính diện tích miếng đất đó theo đơn vị héc-ta ($\text{ha}$).</div>
+        <div class="answer-option">A. $0,09 \text{ ha}$</div>
+        <div class="answer-option">B. $900 \text{ ha}$</div>
+        <div class="answer-option">C. $0,9 \text{ ha}$</div>
+        <div class="answer-option">D. $0,18 \text{ ha}$</div>
+        <div class="rationale"><b>Giải thích:</b> Diện tích $S = \frac{1}{2} \times 60 \times 30 = 900 \text{ m}^2$. Đổi $900 \text{ m}^2 = 900 \div 10000 = 0,09 \text{ ha}$.</div>
+        <div class="hint">Gợi ý: Cẩn thận với việc chuyển đổi từ mét vuông sang héc-ta. ($1 \text{ ha} = 10000 \text{ m}^2$)</div>
+    </div>
+
+    <div class="question-block" data-correct-index="0" data-hint="Độ dài dây rào chính là chu vi của khu vườn.">
+        <div class="question-text"><span class="question-number">Câu 14:</span> (Bài toán có lời văn) Bác rào một khu vườn hình tam giác có ba cạnh $12,5 \text{ m}$, $15,5 \text{ m}$ và $18 \text{ m}$. Hỏi bác cần chuẩn bị bao nhiêu mét dây rào?</div>
+        <div class="answer-option">A. $46 \text{ m}$</div>
+        <div class="answer-option">B. $47 \text{ m}$</div>
+        <div class="answer-option">C. $45 \text{ m}$</div>
+        <div class="answer-option">D. $44 \text{ m}$</div>
+        <div class="rationale"><b>Giải thích:</b> Độ dài dây rào chính là chu vi tam giác: $P = 12,5 + 15,5 + 18 = 46 \text{ m}$.</div>
+        <div class="hint">Gợi ý: Độ dài dây rào chính là chu vi của khu vườn.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="0" data-hint="Trước tiên, hãy đổi tất cả các đơn vị độ dài về mét.">
+        <div class="question-text"><span class="question-number">Câu 15:</span> Tính diện tích của tam giác có đáy $4 \text{ m } 5 \text{ dm}$ và chiều cao $2 \text{ m}$.</div>
+        <div class="answer-option">A. $4,5 \text{ m}^2$</div>
+        <div class="answer-option">B. $9 \text{ m}^2$</div>
+        <div class="answer-option">C. $90 \text{ dm}^2$</div>
+        <div class="answer-option">D. $45 \text{ m}^2$</div>
+        <div class="rationale"><b>Giải thích:</b> Đổi đáy: $4 \text{ m } 5 \text{ dm} = 4,5 \text{ m}$. Diện tích $S = \frac{1}{2} \times 4,5 \times 2 = 4,5 \text{ m}^2$.</div>
+        <div class="hint">Gợi ý: Trước tiên, hãy đổi tất cả các đơn vị độ dài về mét.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="1" data-hint="Cẩn thận với phép chia số thập phân. Nhớ nhân 2 lần diện tích.">
+        <div class="question-text"><span class="question-number">Câu 16:</span> Một tam giác có diện tích $4,8 \text{ cm}^2$ và chiều cao $1,2 \text{ cm}$. Cạnh đáy tương ứng là:</div>
+        <div class="answer-option">A. $4 \text{ cm}$</div>
+        <div class="answer-option">B. $8 \text{ cm}$</div>
+        <div class="answer-option">C. $5,76 \text{ cm}$</div>
+        <div class="answer-option">D. $6 \text{ cm}$</div>
+        <div class="rationale"><b>Giải thích:</b> Đáy $= \frac{2 \times 4,8}{1,2} = \frac{9,6}{1,2} = 8 \text{ cm}$.</div>
+        <div class="hint">Gợi ý: Cẩn thận với phép chia số thập phân. Nhớ nhân 2 lần diện tích.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="1" data-hint="Hai tam giác có diện tích bằng nhau nếu có cùng chiều cao và cùng độ dài cạnh đáy.">
+        <div class="question-text"><span class="question-number">Câu 17:</span> Một tam giác được chia thành hai tam giác nhỏ có diện tích bằng nhau. Điều này có thể xảy ra khi nào?</div>
+        <div class="answer-option">A. Nối một đỉnh với một điểm bất kì trên cạnh đối diện.</div>
+        <div class="answer-option">B. Nối một đỉnh với trung điểm của cạnh đối diện.</div>
+        <div class="answer-option">C. Kẻ đường cao của tam giác.</div>
+        <div class="answer-option">D. Nối hai trung điểm của hai cạnh bên.</div>
+        <div class="rationale"><b>Giải thích:</b> Hai tam giác tạo thành có chung chiều cao và hai cạnh đáy bằng nhau (tại trung điểm), do đó diện tích chúng bằng nhau.</div>
+        <div class="hint">Gợi ý: Hai tam giác có diện tích bằng nhau nếu có cùng chiều cao và cùng độ dài cạnh đáy.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="2" data-hint="Tỉ lệ thay đổi diện tích bằng tích của tỉ lệ thay đổi đáy và tỉ lệ thay đổi chiều cao.">
+        <div class="question-text"><span class="question-number">Câu 18:</span> Nếu tăng cạnh đáy của một tam giác lên $3$ lần và giảm chiều cao đi $3$ lần, diện tích của tam giác đó sẽ:</div>
+        <div class="answer-option">A. Tăng $9$ lần</div>
+        <div class="answer-option">B. Giảm $9$ lần</div>
+        <div class="answer-option">C. Không thay đổi</div>
+        <div class="answer-option">D. Tăng $3$ lần</div>
+        <div class="rationale"><b>Giải thích:</b> Diện tích mới $S' = \frac{1}{2} \times (3 \times \text{đáy}) \times (\frac{1}{3} \times \text{cao}) = \frac{1}{2} \times \text{đáy} \times \text{cao} = S$.</div>
+        <div class="hint">Gợi ý: Tỉ lệ thay đổi diện tích bằng tích của tỉ lệ thay đổi đáy và tỉ lệ thay đổi chiều cao.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="0" data-hint="Cạnh còn lại bằng tổng chu vi trừ đi tổng độ dài hai cạnh đã biết.">
+        <div class="question-text"><span class="question-number">Câu 19:</span> (Bài toán có lời văn) Chu vi của một tam giác là $36 \text{ cm}$. Nếu cạnh thứ nhất là $12 \text{ cm}$ và cạnh thứ hai là $15 \text{ cm}$, thì cạnh thứ ba dài bao nhiêu?</div>
+        <div class="answer-option">A. $9 \text{ cm}$</div>
+        <div class="answer-option">B. $10 \text{ cm}$</div>
+        <div class="answer-option">C. $11 \text{ cm}$</div>
+        <div class="answer-option">D. $13 \text{ cm}$</div>
+        <div class="rationale"><b>Giải thích:</b> Cạnh thứ ba $= 36 - (12 + 15) = 36 - 27 = 9 \text{ cm}$.</div>
+        <div class="hint">Gợi ý: Cạnh còn lại bằng tổng chu vi trừ đi tổng độ dài hai cạnh đã biết.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="2" data-hint="Tên gọi này thể hiện sự 'đồng đều' của các cạnh.">
+        <div class="question-text"><span class="question-number">Câu 20:</span> Một tam giác có <b>ba cạnh</b> bằng nhau. Nó được gọi là tam giác gì?</div>
+        <div class="answer-option">A. Tam giác vuông</div>
+        <div class="answer-option">B. Tam giác cân</div>
+        <div class="answer-option">C. Tam giác đều</div>
+        <div class="answer-option">D. Tam giác tù</div>
+        <div class="rationale"><b>Giải thích:</b> Tam giác đều là tam giác có ba cạnh (và ba góc) bằng nhau.</div>
+        <div class="hint">Gợi ý: Tên gọi này thể hiện sự 'đồng đều' của các cạnh.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="2" data-hint="Hãy đếm số đỉnh của tam giác.">
+        <div class="question-text"><span class="question-number">Câu 21:</span> Trong tam giác, có bao nhiêu đường cao có thể kẻ được?</div>
+        <div class="answer-option">A. Một</div>
+        <div class="answer-option">B. Hai</div>
+        <div class="answer-option">C. Ba</div>
+        <div class="answer-option">D. Vô số</div>
+        <div class="rationale"><b>Giải thích:</b> Mỗi tam giác có ba đỉnh, và từ mỗi đỉnh có thể kẻ một đường cao tương ứng với cạnh đối diện.</div>
+        <div class="hint">Gợi ý: Hãy đếm số đỉnh của tam giác.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="1" data-hint="Thực hiện phép nhân số thập phân và chia $2$.">
+        <div class="question-text"><span class="question-number">Câu 22:</span> Tính diện tích tam giác có đáy $0,75 \text{ m}$ và chiều cao $0,4 \text{ m}$.</div>
+        <div class="answer-option">A. $0,3 \text{ m}^2$</div>
+        <div class="answer-option">B. $0,15 \text{ m}^2$</div>
+        <div class="answer-option">C. $0,6 \text{ m}^2$</div>
+        <div class="answer-option">D. $1,15 \text{ m}^2$</div>
+        <div class="rationale"><b>Giải thích:</b> Diện tích $S = \frac{1}{2} \times 0,75 \times 0,4 = 0,15 \text{ m}^2$.</div>
+        <div class="hint">Gợi ý: Thực hiện phép nhân số thập phân và chia $2$.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="1" data-hint="Sử dụng công thức diện tích tam giác.">
+        <div class="question-text"><span class="question-number">Câu 23:</span> (Bài toán có lời văn) Một biển báo giao thông hình tam giác có đáy $90 \text{ cm}$ và chiều cao $70 \text{ cm}$. Diện tích của biển báo đó là:</div>
+        <div class="answer-option">A. $6300 \text{ cm}^2$</div>
+        <div class="answer-option">B. $3150 \text{ cm}^2$</div>
+        <div class="answer-option">C. $160 \text{ cm}^2$</div>
+        <div class="answer-option">D. $4900 \text{ cm}^2$</div>
+        <div class="rationale"><b>Giải thích:</b> Diện tích $S = \frac{1}{2} \times 90 \times 70 = 3150 \text{ cm}^2$.</div>
+        <div class="hint">Gợi ý: Sử dụng công thức diện tích tam giác.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="1" data-hint="Cạnh đáy còn lại chiếm bao nhiêu phần của cạnh đáy ban đầu?">
+        <div class="question-text"><span class="question-number">Câu 24:</span> Một tam giác có diện tích $60 \text{ cm}^2$. Nếu giữ nguyên chiều cao và giảm cạnh đáy đi $\frac{1}{4}$ độ dài ban đầu, thì diện tích mới là:</div>
+        <div class="answer-option">A. $15 \text{ cm}^2$</div>
+        <div class="answer-option">B. $45 \text{ cm}^2$</div>
+        <div class="answer-option">C. $20 \text{ cm}^2$</div>
+        <div class="answer-option">D. $75 \text{ cm}^2$</div>
+        <div class="rationale"><b>Giải thích:</b> Đáy giảm $\frac{1}{4}$, nên độ dài còn lại là $1 - \frac{1}{4} = \frac{3}{4}$ đáy ban đầu. $S' = S \times \frac{3}{4} = 60 \times 0,75 = 45 \text{ cm}^2$.</div>
+        <div class="hint">Gợi ý: Cạnh đáy còn lại chiếm bao nhiêu phần của cạnh đáy ban đầu?</div>
+    </div>
+
+    <div class="question-block" data-correct-index="1" data-hint="Đường cao chỉ nằm ngoài tam giác khi nó tương ứng với một trong hai cạnh kề góc tù.">
+        <div class="question-text"><span class="question-number">Câu 25:</span> Trong một tam giác tù, đường cao tương ứng với cạnh đáy nằm đối diện góc tù có đặc điểm gì?</div>
+        <div class="answer-option">A. Luôn nằm ngoài tam giác</div>
+        <div class="answer-option">B. Luôn nằm trong tam giác</div>
+        <div class="answer-option">C. Vuông góc tại trung điểm của cạnh đó</div>
+        <div class="answer-option">D. Không thể kẻ được</div>
+        <div class="rationale"><b>Giải thích:</b> Đường cao tương ứng với cạnh đáy nằm đối diện góc tù luôn nằm bên trong tam giác.</div>
+        <div class="hint">Gợi ý: Đường cao chỉ nằm ngoài tam giác khi nó tương ứng với một trong hai cạnh kề góc tù.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="0" data-hint="Hãy nhân diện tích với lượng sơn cần thiết cho mỗi đơn vị diện tích.">
+        <div class="question-text"><span class="question-number">Câu 26:</span> (Bài toán có lời văn) Người ta muốn sơn một mặt phẳng hình tam giác có diện tích $2,4 \text{ m}^2$. Biết cứ mỗi $1 \text{ m}^2$ cần $0,5 \text{ kg}$ sơn. Hỏi cần bao nhiêu kilôgam sơn để sơn hết mặt phẳng đó?</div>
+        <div class="answer-option">A. $1,2 \text{ kg}$</div>
+        <div class="answer-option">B. $4,8 \text{ kg}$</div>
+        <div class="answer-option">C. $1,4 \text{ kg}$</div>
+        <div class="answer-option">D. $12 \text{ kg}$</div>
+        <div class="rationale"><b>Giải thích:</b> Lượng sơn cần dùng: $2,4 \times 0,5 = 1,2 \text{ kg}$.</div>
+        <div class="hint">Gợi ý: Hãy nhân diện tích với lượng sơn cần thiết cho mỗi đơn vị diện tích.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="1" data-hint="Sử dụng diện tích và đáy của phần tăng thêm để tìm chiều cao chung.">
+        <div class="question-text"><span class="question-number">Câu 27:</span> (Bài toán có lời văn) Một tam giác có cạnh đáy $12 \text{ cm}$. Nếu tăng cạnh đáy thêm $4 \text{ cm}$ (giữ nguyên chiều cao), diện tích tăng thêm $8 \text{ cm}^2$. Chiều cao của tam giác là:</div>
+        <div class="answer-option">A. $2 \text{ cm}$</div>
+        <div class="answer-option">B. $4 \text{ cm}$</div>
+        <div class="answer-option">C. $6 \text{ cm}$</div>
+        <div class="answer-option">D. $8 \text{ cm}$</div>
+        <div class="rationale"><b>Giải thích:</b> Phần diện tích tăng thêm là tam giác có đáy $4 \text{ cm}$ và diện tích $8 \text{ cm}^2$. Chiều cao $h = \frac{2 \times 8}{4} = 4 \text{ cm}$.</div>
+        <div class="hint">Gợi ý: Sử dụng diện tích và đáy của phần tăng thêm để tìm chiều cao chung.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="0" data-hint="Trước khi tính, cần đổi $2,5 \text{ dm}$ sang xăng-ti-mét ($\text{cm}$) để đồng nhất đơn vị.">
+        <div class="question-text"><span class="question-number">Câu 28:</span> Tính diện tích của tam giác có đáy $2,5 \text{ dm}$ và chiều cao $15 \text{ cm}$. Kết quả tính bằng $\text{cm}^2$.</div>
+        <div class="answer-option">A. $187,5 \text{ cm}^2$</div>
+        <div class="answer-option">B. $375 \text{ cm}^2$</div>
+        <div class="answer-option">C. $37,5 \text{ cm}^2$</div>
+        <div class="answer-option">D. $18,75 \text{ cm}^2$</div>
+        <div class="rationale"><b>Giải thích:</b> Đổi đáy: $2,5 \text{ dm} = 25 \text{ cm}$. Diện tích $S = \frac{1}{2} \times 25 \times 15 = 187,5 \text{ cm}^2$.</div>
+        <div class="hint">Gợi ý: Trước khi tính, cần đổi $2,5 \text{ dm}$ sang xăng-ti-mét ($\text{cm}$) để đồng nhất đơn vị.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="0" data-hint="Sử dụng phương pháp tìm hai số khi biết tổng và tỉ số.">
+        <div class="question-text"><span class="question-number">Câu 29:</span> (Bài toán có lời văn) Một khu đất hình tam giác có tổng độ dài ba cạnh là $75 \text{ m}$. Biết tỉ số giữa cạnh thứ nhất và cạnh thứ hai là $2:3$, và cạnh thứ ba bằng $30 \text{ m}$. Cạnh thứ nhất và cạnh thứ hai dài bao nhiêu?</div>
+        <div class="answer-option">A. $18 \text{ m}$ và $27 \text{ m}$</div>
+        <div class="answer-option">B. $15 \text{ m}$ và $30 \text{ m}$</div>
+        <div class="answer-option">C. $20 \text{ m}$ và $25 \text{ m}$</div>
+        <div class="answer-option">D. $22,5 \text{ m}$ và $22,5 \text{ m}$</div>
+        <div class="rationale"><b>Giải thích:</b> Tổng hai cạnh đầu $= 75 - 30 = 45 \text{ m}$. Cạnh 1 và 2 tỉ lệ $2:3$. Tổng số phần là $2+3=5$. Cạnh 1 $= 45 \div 5 \times 2 = 18 \text{ m}$. Cạnh 2 $= 45 \div 5 \times 3 = 27 \text{ m}$.</div>
+        <div class="hint">Gợi ý: Sử dụng phương pháp tìm hai số khi biết tổng và tỉ số.</div>
+    </div>
+
+    <div class="question-block" data-correct-index="1" data-hint="Phần diện tích tăng thêm cũng là một tam giác có chung cạnh đáy và chiều cao đã cho.">
+        <div class="question-text"><span class="question-number">Câu 30:</span> Nếu giữ nguyên đáy và tăng chiều cao lên $10 \text{ cm}$, diện tích của tam giác sẽ tăng thêm $50 \text{ cm}^2$. Độ dài cạnh đáy của tam giác là:</div>
+        <div class="answer-option">A. $5 \text{ cm}$</div>
+        <div class="answer-option">B. $10 \text{ cm}$</div>
+        <div class="answer-option">C. $20 \text{ cm}$</div>
+        <div class="answer-option">D. $25 \text{ cm}$</div>
+        <div class="rationale"><b>Giải thích:</b> Đáy $= \frac{2 \times S_{\text{tăng}}}{h_{\text{tăng}}} = \frac{2 \times 50}{10} = 10 \text{ cm}$.</div>
+        <div class="hint">Gợi ý: Phần diện tích tăng thêm cũng là một tam giác có chung cạnh đáy và chiều cao đã cho.</div>
+    </div>
+
+    </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const questionBlocks = document.querySelectorAll('.question-block');
+
+        questionBlocks.forEach(block => {
+            const options = block.querySelectorAll('.answer-option');
+            const correctIndex = parseInt(block.dataset.correctIndex);
+            const rationale = block.querySelector('.rationale');
+
+            options.forEach((option, index) => {
+                option.addEventListener('click', () => {
+                    // Xóa trạng thái đã chọn/đúng/sai trước đó
+                    options.forEach(opt => {
+                        opt.classList.remove('selected', 'correct-answer', 'incorrect-answer');
+                    });
+                    rationale.style.display = 'none';
+
+                    // Thêm trạng thái đã chọn
+                    option.classList.add('selected');
+
+                    // Hiển thị kết quả và giải thích
+                    if (index === correctIndex) {
+                        option.classList.add('correct-answer');
+                        rationale.classList.add('correct-answer');
+                        rationale.innerHTML = `<b>Chúc mừng! Đáp án đúng.</b> ${rationale.innerHTML}`;
+                    } else {
+                        option.classList.add('incorrect-answer');
+                        options[correctIndex].classList.add('correct-answer'); // Highlight đáp án đúng
+                        rationale.classList.add('incorrect-answer');
+                        rationale.innerHTML = `<b>Đáp án Sai. Đáp án đúng là:</b> ${options[correctIndex].textContent}. ${rationale.innerHTML.replace(/<[^>]*>/g, '')}`; // Lấy nội dung giải thích ban đầu
+                    }
+                    rationale.style.display = 'block';
+                });
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
